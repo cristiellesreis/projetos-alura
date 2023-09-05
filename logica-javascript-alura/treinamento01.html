@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<script>
+
+var quantidadeDiasJr=14;
+var quantidadeDiasPleno=7;
+var quantidadeDiasSenior=1;
+var quantidadeDiasLT=1;
+
+var pontosEsforçoJr=1;
+var pontosEsforçoPleno=2;
+var pontosEsforçoSenior=1;
+var pontosEsforçoLt=3;
+
+
+function CalculaPrazo (equipe, quantidadePontosProjeto){
+	console.info('a equipe: ', equipe);
+	console.info('quantidade de jr: ', equipe[0]);
+	console.info('quantidade de pleno: ', equipe[1]);
+	console.info('quantidade de senior: ', equipe[2]);
+	console.info('quantidade de lt: ', equipe[3]);
+	console.info(quantidadePontosProjeto);
+	console.info('quantidade de pontos jr: ',obterEsforco(equipe[0], pontosEsforçoJr));
+	console.info('quantidade de pontos pleno: ',obterEsforco(equipe[1], pontosEsforçoPleno));
+	console.info('quantidade de pontos senior: ',obterEsforco(equipe[2], pontosEsforçoSenior));
+	console.info('quantidade de pontos tl: ',obterEsforco(equipe[3], pontosEsforçoLt));
+
+
+	var resultado = 0;
+	return resultado;
+} 
+
+
+function obterEsforco(quantidadeColaboradores, pontosEsforco){
+	return quantidadeColaboradores*pontosEsforco;
+}
+
+
+CalculaPrazo([2,3,4,2],112)
+
+</script>
